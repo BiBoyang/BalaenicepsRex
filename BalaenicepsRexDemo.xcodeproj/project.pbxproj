@@ -1,0 +1,692 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F126D52D21B792CA008190E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F126D52C21B792CA008190E8 /* AppDelegate.m */; };
+		F126D53021B792CA008190E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F126D52F21B792CA008190E8 /* ViewController.m */; };
+		F126D53321B792CA008190E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F126D53121B792CA008190E8 /* Main.storyboard */; };
+		F126D53521B792CC008190E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F126D53421B792CC008190E8 /* Assets.xcassets */; };
+		F126D53821B792CC008190E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F126D53621B792CC008190E8 /* LaunchScreen.storyboard */; };
+		F126D53B21B792CC008190E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F126D53A21B792CC008190E8 /* main.m */; };
+		F126D54521B792CC008190E8 /* BalaenicepsRexDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F126D54421B792CC008190E8 /* BalaenicepsRexDemoTests.m */; };
+		F126D55021B792CC008190E8 /* BalaenicepsRexDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F126D54F21B792CC008190E8 /* BalaenicepsRexDemoUITests.m */; };
+		F126D56721B795D3008190E8 /* BalaenicepsRexManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F126D56621B795D3008190E8 /* BalaenicepsRexManager.m */; };
+		F126D56D21B79ACA008190E8 /* BRWindowView.m in Sources */ = {isa = PBXBuildFile; fileRef = F126D56C21B79ACA008190E8 /* BRWindowView.m */; };
+		F126D57021B7A14F008190E8 /* BRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F126D56F21B7A14F008190E8 /* BRViewController.m */; };
+		F126D57321B7AB47008190E8 /* BRWindowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F126D57221B7AB47008190E8 /* BRWindowViewController.m */; };
+		F126D57B21B7B1E5008190E8 /* UIView+BRLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F126D57A21B7B1E5008190E8 /* UIView+BRLayout.m */; };
+		F126D58021B7C3F0008190E8 /* BRFPSHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F126D57F21B7C3F0008190E8 /* BRFPSHelper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F126D54121B792CC008190E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F126D52021B792CA008190E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F126D52721B792CA008190E8;
+			remoteInfo = BalaenicepsRexDemo;
+		};
+		F126D54C21B792CC008190E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F126D52021B792CA008190E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F126D52721B792CA008190E8;
+			remoteInfo = BalaenicepsRexDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F126D52821B792CA008190E8 /* BalaenicepsRexDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BalaenicepsRexDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F126D52B21B792CA008190E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F126D52C21B792CA008190E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F126D52E21B792CA008190E8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F126D52F21B792CA008190E8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F126D53221B792CA008190E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F126D53421B792CC008190E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F126D53721B792CC008190E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F126D53921B792CC008190E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F126D53A21B792CC008190E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F126D54021B792CC008190E8 /* BalaenicepsRexDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BalaenicepsRexDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F126D54421B792CC008190E8 /* BalaenicepsRexDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BalaenicepsRexDemoTests.m; sourceTree = "<group>"; };
+		F126D54621B792CC008190E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F126D54B21B792CC008190E8 /* BalaenicepsRexDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BalaenicepsRexDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F126D54F21B792CC008190E8 /* BalaenicepsRexDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BalaenicepsRexDemoUITests.m; sourceTree = "<group>"; };
+		F126D55121B792CC008190E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F126D56121B794F1008190E8 /* BalaenicepsRex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BalaenicepsRex.h; sourceTree = "<group>"; };
+		F126D56521B795D3008190E8 /* BalaenicepsRexManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BalaenicepsRexManager.h; sourceTree = "<group>"; };
+		F126D56621B795D3008190E8 /* BalaenicepsRexManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BalaenicepsRexManager.m; sourceTree = "<group>"; };
+		F126D56B21B79ACA008190E8 /* BRWindowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRWindowView.h; sourceTree = "<group>"; };
+		F126D56C21B79ACA008190E8 /* BRWindowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRWindowView.m; sourceTree = "<group>"; };
+		F126D56E21B7A14F008190E8 /* BRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRViewController.h; sourceTree = "<group>"; };
+		F126D56F21B7A14F008190E8 /* BRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRViewController.m; sourceTree = "<group>"; };
+		F126D57121B7AB47008190E8 /* BRWindowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRWindowViewController.h; sourceTree = "<group>"; };
+		F126D57221B7AB47008190E8 /* BRWindowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRWindowViewController.m; sourceTree = "<group>"; };
+		F126D57421B7B0BA008190E8 /* BRMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRMacros.h; sourceTree = "<group>"; };
+		F126D57921B7B1E5008190E8 /* UIView+BRLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+BRLayout.h"; sourceTree = "<group>"; };
+		F126D57A21B7B1E5008190E8 /* UIView+BRLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+BRLayout.m"; sourceTree = "<group>"; };
+		F126D57E21B7C3F0008190E8 /* BRFPSHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRFPSHelper.h; sourceTree = "<group>"; };
+		F126D57F21B7C3F0008190E8 /* BRFPSHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRFPSHelper.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F126D52521B792CA008190E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F126D53D21B792CC008190E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F126D54821B792CC008190E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F126D51F21B792CA008190E8 = {
+			isa = PBXGroup;
+			children = (
+				F126D52A21B792CA008190E8 /* BalaenicepsRexDemo */,
+				F126D54321B792CC008190E8 /* BalaenicepsRexDemoTests */,
+				F126D54E21B792CC008190E8 /* BalaenicepsRexDemoUITests */,
+				F126D52921B792CA008190E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F126D52921B792CA008190E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F126D52821B792CA008190E8 /* BalaenicepsRexDemo.app */,
+				F126D54021B792CC008190E8 /* BalaenicepsRexDemoTests.xctest */,
+				F126D54B21B792CC008190E8 /* BalaenicepsRexDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F126D52A21B792CA008190E8 /* BalaenicepsRexDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F126D55D21B79341008190E8 /* BalaenicepsRex */,
+				F126D52B21B792CA008190E8 /* AppDelegate.h */,
+				F126D52C21B792CA008190E8 /* AppDelegate.m */,
+				F126D56E21B7A14F008190E8 /* BRViewController.h */,
+				F126D56F21B7A14F008190E8 /* BRViewController.m */,
+				F126D52E21B792CA008190E8 /* ViewController.h */,
+				F126D52F21B792CA008190E8 /* ViewController.m */,
+				F126D53121B792CA008190E8 /* Main.storyboard */,
+				F126D53421B792CC008190E8 /* Assets.xcassets */,
+				F126D53621B792CC008190E8 /* LaunchScreen.storyboard */,
+				F126D53921B792CC008190E8 /* Info.plist */,
+				F126D53A21B792CC008190E8 /* main.m */,
+			);
+			path = BalaenicepsRexDemo;
+			sourceTree = "<group>";
+		};
+		F126D54321B792CC008190E8 /* BalaenicepsRexDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F126D54421B792CC008190E8 /* BalaenicepsRexDemoTests.m */,
+				F126D54621B792CC008190E8 /* Info.plist */,
+			);
+			path = BalaenicepsRexDemoTests;
+			sourceTree = "<group>";
+		};
+		F126D54E21B792CC008190E8 /* BalaenicepsRexDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F126D54F21B792CC008190E8 /* BalaenicepsRexDemoUITests.m */,
+				F126D55121B792CC008190E8 /* Info.plist */,
+			);
+			path = BalaenicepsRexDemoUITests;
+			sourceTree = "<group>";
+		};
+		F126D55D21B79341008190E8 /* BalaenicepsRex */ = {
+			isa = PBXGroup;
+			children = (
+				F126D57521B7B16C008190E8 /* Helper */,
+				F126D56021B79361008190E8 /* Config */,
+				F126D55F21B7935E008190E8 /* Components */,
+				F126D55E21B7935B008190E8 /* Core */,
+			);
+			path = BalaenicepsRex;
+			sourceTree = "<group>";
+		};
+		F126D55E21B7935B008190E8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F126D56921B799E8008190E8 /* Manager */,
+				F126D56A21B799F8008190E8 /* UI */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F126D55F21B7935E008190E8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F126D57D21B7C30E008190E8 /* CPU */,
+				F126D57C21B7C308008190E8 /* FPS */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F126D56021B79361008190E8 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				F126D57421B7B0BA008190E8 /* BRMacros.h */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		F126D56921B799E8008190E8 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				F126D56121B794F1008190E8 /* BalaenicepsRex.h */,
+				F126D56521B795D3008190E8 /* BalaenicepsRexManager.h */,
+				F126D56621B795D3008190E8 /* BalaenicepsRexManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		F126D56A21B799F8008190E8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F126D56B21B79ACA008190E8 /* BRWindowView.h */,
+				F126D56C21B79ACA008190E8 /* BRWindowView.m */,
+				F126D57121B7AB47008190E8 /* BRWindowViewController.h */,
+				F126D57221B7AB47008190E8 /* BRWindowViewController.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F126D57521B7B16C008190E8 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F126D57921B7B1E5008190E8 /* UIView+BRLayout.h */,
+				F126D57A21B7B1E5008190E8 /* UIView+BRLayout.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		F126D57C21B7C308008190E8 /* FPS */ = {
+			isa = PBXGroup;
+			children = (
+				F126D57E21B7C3F0008190E8 /* BRFPSHelper.h */,
+				F126D57F21B7C3F0008190E8 /* BRFPSHelper.m */,
+			);
+			path = FPS;
+			sourceTree = "<group>";
+		};
+		F126D57D21B7C30E008190E8 /* CPU */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CPU;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F126D52721B792CA008190E8 /* BalaenicepsRexDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F126D55421B792CC008190E8 /* Build configuration list for PBXNativeTarget "BalaenicepsRexDemo" */;
+			buildPhases = (
+				F126D52421B792CA008190E8 /* Sources */,
+				F126D52521B792CA008190E8 /* Frameworks */,
+				F126D52621B792CA008190E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BalaenicepsRexDemo;
+			productName = BalaenicepsRexDemo;
+			productReference = F126D52821B792CA008190E8 /* BalaenicepsRexDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F126D53F21B792CC008190E8 /* BalaenicepsRexDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F126D55721B792CC008190E8 /* Build configuration list for PBXNativeTarget "BalaenicepsRexDemoTests" */;
+			buildPhases = (
+				F126D53C21B792CC008190E8 /* Sources */,
+				F126D53D21B792CC008190E8 /* Frameworks */,
+				F126D53E21B792CC008190E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F126D54221B792CC008190E8 /* PBXTargetDependency */,
+			);
+			name = BalaenicepsRexDemoTests;
+			productName = BalaenicepsRexDemoTests;
+			productReference = F126D54021B792CC008190E8 /* BalaenicepsRexDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F126D54A21B792CC008190E8 /* BalaenicepsRexDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F126D55A21B792CC008190E8 /* Build configuration list for PBXNativeTarget "BalaenicepsRexDemoUITests" */;
+			buildPhases = (
+				F126D54721B792CC008190E8 /* Sources */,
+				F126D54821B792CC008190E8 /* Frameworks */,
+				F126D54921B792CC008190E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F126D54D21B792CC008190E8 /* PBXTargetDependency */,
+			);
+			name = BalaenicepsRexDemoUITests;
+			productName = BalaenicepsRexDemoUITests;
+			productReference = F126D54B21B792CC008190E8 /* BalaenicepsRexDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F126D52021B792CA008190E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "毕博洋";
+				TargetAttributes = {
+					F126D52721B792CA008190E8 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					F126D53F21B792CC008190E8 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F126D52721B792CA008190E8;
+					};
+					F126D54A21B792CC008190E8 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F126D52721B792CA008190E8;
+					};
+				};
+			};
+			buildConfigurationList = F126D52321B792CA008190E8 /* Build configuration list for PBXProject "BalaenicepsRexDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F126D51F21B792CA008190E8;
+			productRefGroup = F126D52921B792CA008190E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F126D52721B792CA008190E8 /* BalaenicepsRexDemo */,
+				F126D53F21B792CC008190E8 /* BalaenicepsRexDemoTests */,
+				F126D54A21B792CC008190E8 /* BalaenicepsRexDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F126D52621B792CA008190E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F126D53821B792CC008190E8 /* LaunchScreen.storyboard in Resources */,
+				F126D53521B792CC008190E8 /* Assets.xcassets in Resources */,
+				F126D53321B792CA008190E8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F126D53E21B792CC008190E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F126D54921B792CC008190E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F126D52421B792CA008190E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F126D58021B7C3F0008190E8 /* BRFPSHelper.m in Sources */,
+				F126D57021B7A14F008190E8 /* BRViewController.m in Sources */,
+				F126D57321B7AB47008190E8 /* BRWindowViewController.m in Sources */,
+				F126D57B21B7B1E5008190E8 /* UIView+BRLayout.m in Sources */,
+				F126D53021B792CA008190E8 /* ViewController.m in Sources */,
+				F126D53B21B792CC008190E8 /* main.m in Sources */,
+				F126D52D21B792CA008190E8 /* AppDelegate.m in Sources */,
+				F126D56721B795D3008190E8 /* BalaenicepsRexManager.m in Sources */,
+				F126D56D21B79ACA008190E8 /* BRWindowView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F126D53C21B792CC008190E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F126D54521B792CC008190E8 /* BalaenicepsRexDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F126D54721B792CC008190E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F126D55021B792CC008190E8 /* BalaenicepsRexDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F126D54221B792CC008190E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F126D52721B792CA008190E8 /* BalaenicepsRexDemo */;
+			targetProxy = F126D54121B792CC008190E8 /* PBXContainerItemProxy */;
+		};
+		F126D54D21B792CC008190E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F126D52721B792CA008190E8 /* BalaenicepsRexDemo */;
+			targetProxy = F126D54C21B792CC008190E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F126D53121B792CA008190E8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F126D53221B792CA008190E8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F126D53621B792CC008190E8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F126D53721B792CC008190E8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F126D55221B792CC008190E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F126D55321B792CC008190E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F126D55521B792CC008190E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7QE575992J;
+				INFOPLIST_FILE = BalaenicepsRexDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BiBoyang.BalaenicepsRexDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F126D55621B792CC008190E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7QE575992J;
+				INFOPLIST_FILE = BalaenicepsRexDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BiBoyang.BalaenicepsRexDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F126D55821B792CC008190E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BalaenicepsRexDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BiBoyang.BalaenicepsRexDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BalaenicepsRexDemo.app/BalaenicepsRexDemo";
+			};
+			name = Debug;
+		};
+		F126D55921B792CC008190E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BalaenicepsRexDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BiBoyang.BalaenicepsRexDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BalaenicepsRexDemo.app/BalaenicepsRexDemo";
+			};
+			name = Release;
+		};
+		F126D55B21B792CC008190E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BalaenicepsRexDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BiBoyang.BalaenicepsRexDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BalaenicepsRexDemo;
+			};
+			name = Debug;
+		};
+		F126D55C21B792CC008190E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BalaenicepsRexDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BiBoyang.BalaenicepsRexDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BalaenicepsRexDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F126D52321B792CA008190E8 /* Build configuration list for PBXProject "BalaenicepsRexDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F126D55221B792CC008190E8 /* Debug */,
+				F126D55321B792CC008190E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F126D55421B792CC008190E8 /* Build configuration list for PBXNativeTarget "BalaenicepsRexDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F126D55521B792CC008190E8 /* Debug */,
+				F126D55621B792CC008190E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F126D55721B792CC008190E8 /* Build configuration list for PBXNativeTarget "BalaenicepsRexDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F126D55821B792CC008190E8 /* Debug */,
+				F126D55921B792CC008190E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F126D55A21B792CC008190E8 /* Build configuration list for PBXNativeTarget "BalaenicepsRexDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F126D55B21B792CC008190E8 /* Debug */,
+				F126D55C21B792CC008190E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F126D52021B792CA008190E8 /* Project object */;
+}
