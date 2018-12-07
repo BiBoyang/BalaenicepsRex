@@ -43,7 +43,7 @@ static CGFloat const kEntryViewSize = 100;
 
 - (void)setUpView {
     
-    self.windowLevel = UIWindowLevelAlert + 2;
+    self.windowLevel = UIWindowLevelAlert + 5;
     if (!self.rootViewController)
     {
         self.rootViewController = [[UIViewController alloc] init];
@@ -52,6 +52,10 @@ static CGFloat const kEntryViewSize = 100;
     self.entryView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
     self.entryView.backgroundColor = [UIColor blueColor];
     [self.rootViewController.view addSubview:self.entryView];
+    
+    
+    
+    
     
     //添加手势
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(panEntryView:)];
@@ -110,7 +114,7 @@ static CGFloat const kEntryViewSize = 100;
         [self showWindow];
     };
     [vc presentViewController:controller animated:YES completion:nil];
-
+    
 }
 
 - (void)showWindow {
@@ -254,9 +258,7 @@ static CGFloat const kEntryViewSize = 100;
     // 注意方法最后要调用 vm_deallocate，防止出现内存泄漏
     kr = vm_deallocate(mach_task_self(), (vm_offset_t)thread_list, thread_count * sizeof(thread_t));
     assert(kr == KERN_SUCCESS);
-    
-    NSLog(@"%f",tot_cpu);
-    
+        
     self.CPULabel.text = [NSString stringWithFormat:@"CPU：%.2f%%",tot_cpu * 100];
 }
 

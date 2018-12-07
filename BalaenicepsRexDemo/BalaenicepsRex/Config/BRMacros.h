@@ -10,8 +10,8 @@
 #ifndef BRMacros_h
 #define BRMacros_h
 
-#define BRScreenWidth ([UIScreen mainScreen].bounds.size.width)
-#define BRScreenHeight ([UIScreen mainScreen].bounds.size.height)
+#define BRWeakSelf __weak typeof(self) weakSelf = self;
+#define BRStrongSelf __strong __typeof(weakSelf)strongSelf = weakSelf;
 
 
 

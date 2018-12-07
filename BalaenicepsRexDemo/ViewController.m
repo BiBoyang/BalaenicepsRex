@@ -30,6 +30,7 @@
 - (void)setupView {
     
     UIButton *button = [[UIButton alloc]init];
+    [button setTitle:@"push" forState:(UIControlStateNormal)];
     button.frame = CGRectMake(100, 200, 200, 200);
     button.backgroundColor = [UIColor redColor];
     [button addTarget:self action:@selector(pushViewController:) forControlEvents:(UIControlEventTouchUpInside)];

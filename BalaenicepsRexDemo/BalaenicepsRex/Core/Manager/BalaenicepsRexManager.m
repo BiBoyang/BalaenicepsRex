@@ -52,25 +52,16 @@ static BalaenicepsRexManager *_instance;
 - (void)install {
 
     self.BRWindow = [[BRWindowView alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
-    //这里是为了延迟加载，防止UIWindow冲突
-    //Application windows are expected to have a root view controller at the end of application launch
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//        [self.BRWindow makeKeyAndVisible];
-//    });
     [self.BRWindow makeKeyAndVisible];
-
-//    [[BRFPSHelper sharedHelper]start];
-    
-    
 }
 
 - (void)initData {
     
     
-    [self addPluginNameWith:@"App信息" pluginClassName:@"appInfo" ModuleName:nil];
-    [self addPluginNameWith:@"沙盒信息" pluginClassName:@"SandBox" ModuleName:nil];
-    [self addPluginNameWith:@"H5测试" pluginClassName:@"H5" ModuleName:nil];
-    [self addPluginNameWith:@"内存泄漏" pluginClassName:@"MemoryLeak" ModuleName:nil];
+    [self addPluginNameWith:@"App信息" pluginClassName:@"appInfo" ModuleName:@"基本操作"];
+    [self addPluginNameWith:@"沙盒信息" pluginClassName:@"SandBox" ModuleName:@"基本操作"];
+    [self addPluginNameWith:@"H5测试" pluginClassName:@"H5" ModuleName:@"基本操作"];
+    [self addPluginNameWith:@"内存泄漏" pluginClassName:@"MemoryLeak" ModuleName:@"基本操作"];
     
 }
 
@@ -83,7 +74,7 @@ static BalaenicepsRexManager *_instance;
     
     
     NSMutableArray *pluginArray = [[NSMutableArray alloc] initWithObjects:dic, nil];
-    [self addPluginWith:pluginArray withModuleName:@"BR"];
+    [self addPluginWith:pluginArray withModuleName:nil];
 }
 
 
@@ -93,10 +84,10 @@ static BalaenicepsRexManager *_instance;
     
     NSMutableDictionary *dic = [[NSMutableDictionary alloc]init];
     [dic setValue:mutableArray forKey:@"pluginDescArray"];
-    [dic setValue:name forKey:@"moduleName"];
+//    [dic setValue:name forKey:@"moduleName"];
     [self.allPluginArray addObject:dic];
     
-    NSLog(@"________%@",self.allPluginArray);
+        
     
 }
 

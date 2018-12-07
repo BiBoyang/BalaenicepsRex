@@ -22,21 +22,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    
-    
-//    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-//    [self.window makeKeyAndVisible];
-//    BRViewController *homeVc = [[BRViewController alloc] init];
-//    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:homeVc];
-//    self.window.rootViewController = nav;
-//    [self.window makeKeyAndVisible];
-    
     ViewController *vc = [[ViewController alloc]init];
     UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:vc];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = navi;
     [self.window makeKeyAndVisible];
-    
     
     
     [[BalaenicepsRexManager shareBalaenicepsRex]startBalaenicepsRex];

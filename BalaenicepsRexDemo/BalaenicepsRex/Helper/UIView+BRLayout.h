@@ -10,6 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+#define BRScreenWidth ([UIScreen mainScreen].bounds.size.width)
+#define BRScreenHeight ([UIScreen mainScreen].bounds.size.height)
+
 @interface UIView (BRLayout)
 
 @property (nonatomic, assign) CGFloat   x;
