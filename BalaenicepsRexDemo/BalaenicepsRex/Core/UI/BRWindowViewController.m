@@ -15,7 +15,6 @@
 @interface BRWindowViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
 @property (nonatomic, strong) UICollectionView *BRCollectionView;
-
 @property (nonatomic, strong) NSMutableArray *sourceArray;
 
 @end
@@ -46,13 +45,11 @@
     };
     
     [self.view addSubview:navView];
-        
     self.sourceArray = [BalaenicepsRexManager shareBalaenicepsRex].allPluginArray;
-    
+
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc]init];
     flowLayout.minimumLineSpacing = 20.0f;
     flowLayout.minimumInteritemSpacing = 5.0f;
-    
     _BRCollectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0.0f, 100, self.view.width, self.view.height - 100) collectionViewLayout:flowLayout];
     _BRCollectionView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:_BRCollectionView];
