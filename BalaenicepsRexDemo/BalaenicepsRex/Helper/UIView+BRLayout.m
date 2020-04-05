@@ -15,41 +15,41 @@
 @dynamic x, y, width, height, origin, size;
 
 -(void)setX:(CGFloat)x{
-    self.frame      = CGRectMake(PIXEL_INTEGRAL(x), self.y, self.width, self.height);
+    self.frame = CGRectMake(PIXEL_INTEGRAL(x), self.y, self.width, self.height);
 }
 
 -(void)setY:(CGFloat)y{
-    self.frame      = CGRectMake(self.x, PIXEL_INTEGRAL(y), self.width, self.height);
+    self.frame = CGRectMake(self.x, PIXEL_INTEGRAL(y), self.width, self.height);
 }
 
 -(void)setWidth:(CGFloat)width{
-    self.frame      = CGRectMake(self.x, self.y, PIXEL_INTEGRAL(width), self.height);
+    self.frame = CGRectMake(self.x, self.y, PIXEL_INTEGRAL(width), self.height);
 }
 
 -(void)setHeight:(CGFloat)height{
-    self.frame      = CGRectMake(self.x, self.y, self.width, PIXEL_INTEGRAL(height));
+    self.frame = CGRectMake(self.x, self.y, self.width, PIXEL_INTEGRAL(height));
 }
 
 -(void)setOrigin:(CGPoint)origin{
-    self.x          = origin.x;
-    self.y          = origin.y;
+    self.x = origin.x;
+    self.y = origin.y;
 }
 
 -(void)setSize:(CGSize)size{
-    self.width      = size.width;
-    self.height     = size.height;
+    self.width = size.width;
+    self.height = size.height;
 }
 
 -(void)setRight:(CGFloat)right {
-    self.x          = right - self.width;
+    self.x = right - self.width;
 }
 
 -(void)setBottom:(CGFloat)bottom {
-    self.y          = bottom - self.height;
+    self.y = bottom - self.height;
 }
 
 -(void)setLeft:(CGFloat)left{
-    self.x          = left;
+    self.x = left;
 }
 
 -(void)setTop:(CGFloat)top{
