@@ -21,6 +21,7 @@
 		F126D57321B7AB47008190E8 /* BRWindowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F126D57221B7AB47008190E8 /* BRWindowViewController.m */; };
 		F126D57B21B7B1E5008190E8 /* UIView+BRLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F126D57A21B7B1E5008190E8 /* UIView+BRLayout.m */; };
 		F126D58021B7C3F0008190E8 /* BRFPSHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F126D57F21B7C3F0008190E8 /* BRFPSHelper.m */; };
+		F16EF0DE243A9F4B006B0A8F /* BRHomeWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F16EF0DD243A9F4B006B0A8F /* BRHomeWindow.m */; };
 		F1FEE41921BA3CE90060422F /* BRNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FEE41821BA3CE90060422F /* BRNavView.m */; };
 		F1FEE41C21BA4D5D0060422F /* BRPluginCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FEE41B21BA4D5D0060422F /* BRPluginCell.m */; };
 /* End PBXBuildFile section */
@@ -73,6 +74,8 @@
 		F126D57A21B7B1E5008190E8 /* UIView+BRLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+BRLayout.m"; sourceTree = "<group>"; };
 		F126D57E21B7C3F0008190E8 /* BRFPSHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRFPSHelper.h; sourceTree = "<group>"; };
 		F126D57F21B7C3F0008190E8 /* BRFPSHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRFPSHelper.m; sourceTree = "<group>"; };
+		F16EF0DC243A9F4B006B0A8F /* BRHomeWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRHomeWindow.h; sourceTree = "<group>"; };
+		F16EF0DD243A9F4B006B0A8F /* BRHomeWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRHomeWindow.m; sourceTree = "<group>"; };
 		F1FEE41721BA3CE90060422F /* BRNavView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRNavView.h; sourceTree = "<group>"; };
 		F1FEE41821BA3CE90060422F /* BRNavView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRNavView.m; sourceTree = "<group>"; };
 		F1FEE41A21BA4D5D0060422F /* BRPluginCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRPluginCell.h; sourceTree = "<group>"; };
@@ -214,6 +217,8 @@
 			children = (
 				F126D56B21B79ACA008190E8 /* BRWindowView.h */,
 				F126D56C21B79ACA008190E8 /* BRWindowView.m */,
+				F16EF0DC243A9F4B006B0A8F /* BRHomeWindow.h */,
+				F16EF0DD243A9F4B006B0A8F /* BRHomeWindow.m */,
 				F126D57121B7AB47008190E8 /* BRWindowViewController.h */,
 				F126D57221B7AB47008190E8 /* BRWindowViewController.m */,
 				F1FEE41A21BA4D5D0060422F /* BRPluginCell.h */,
@@ -396,6 +401,7 @@
 				F1FEE41921BA3CE90060422F /* BRNavView.m in Sources */,
 				F126D52D21B792CA008190E8 /* AppDelegate.m in Sources */,
 				F126D56721B795D3008190E8 /* BalaenicepsRexManager.m in Sources */,
+				F16EF0DE243A9F4B006B0A8F /* BRHomeWindow.m in Sources */,
 				F126D56D21B79ACA008190E8 /* BRWindowView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

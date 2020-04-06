@@ -57,7 +57,6 @@ static BalaenicepsRexManager *_instance;
 
 - (void)initData {
     
-    
     [self addPluginNameWith:@"App信息" pluginClassName:@"appInfo" ModuleName:@"基本操作"];
     [self addPluginNameWith:@"沙盒信息" pluginClassName:@"SandBox" ModuleName:@"基本操作"];
     [self addPluginNameWith:@"H5测试" pluginClassName:@"H5" ModuleName:@"基本操作"];

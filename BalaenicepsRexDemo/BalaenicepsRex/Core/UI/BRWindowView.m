@@ -8,6 +8,7 @@
 
 #import "BRWindowView.h"
 #import "BRWindowViewController.h"
+#import "BRHomeWindow.h"
 #import "BRMacros.h"
 #import "UIView+BRLayout.h"
 #import <mach/mach.h>
@@ -27,7 +28,7 @@ static CGFloat const kEntryViewSize = 50;
 @property (nonatomic, assign) NSUInteger count;
 
 @property (nonatomic , strong) NSTimer *CPUTimer;
-
+ 
 @end
 @implementation BRWindowView
 
@@ -59,6 +60,10 @@ static CGFloat const kEntryViewSize = 50;
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapEntryView:)];
     [self addGestureRecognizer:tap];
     
+//    UITapGestureRecognizer *doubleTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(doubleTapEntryView:)];
+//    [self addGestureRecognizer:doubleTap];
+    
+    
     // Create CPULabel
     self.CPULabel.frame = CGRectMake(0, 0, 50, 20);
     self.CPULabel.backgroundColor = [UIColor redColor];
@@ -81,16 +86,13 @@ static CGFloat const kEntryViewSize = 50;
     
     if (newX < kEntryViewSize / 2) {
         newX = kEntryViewSize / 2;
-    }
-    if (newX > [UIScreen mainScreen].bounds.size.width + kEntryViewSize / 2) {
+    } else if (newX > [UIScreen mainScreen].bounds.size.width + kEntryViewSize / 2) {
         newX = [UIScreen mainScreen].bounds.size.width + kEntryViewSize / 2;
     }
 
     if (newY < kEntryViewSize / 2) {
         newY = kEntryViewSize / 2;
-    }
-
-    if (newY > [UIScreen mainScreen].bounds.size.height + kEntryViewSize / 2) {
+    } else if (newY > [UIScreen mainScreen].bounds.size.height + kEntryViewSize / 2) {
         newY = [UIScreen mainScreen].bounds.size.height + kEntryViewSize / 2;
     }
 
@@ -99,13 +101,27 @@ static CGFloat const kEntryViewSize = 50;
 
 - (void)tapEntryView:(UITapGestureRecognizer *)tap {
     
-    [self hideWindow];
-    UIViewController *vc = [[[UIApplication sharedApplication].delegate window] rootViewController];
-    BRWindowViewController *controller = [[BRWindowViewController alloc]init];
-    controller.backBlock = ^{        
-        [self showWindow];
-    };
-    [vc presentViewController:controller animated:YES completion:nil];
+//    [self hideWindow];
+//    UIViewController *vc = [[[UIApplication sharedApplication].delegate window] rootViewController];
+//    BRWindowViewController *controller = [[BRWindowViewController alloc]init];
+//    controller.backBlock = ^{
+//        [self showWindow];
+//    };
+//    [vc presentViewController:controller animated:YES completion:nil];
+    
+    if([BRHomeWindow shareInstance].hidden) {
+        [[BRHomeWindow shareInstance] show];
+    } else {
+        [[BRHomeWindow shareInstance] hide];
+    }
+    
+    
+}
+
+- (void)doubleTapEntryView:(UITapGestureRecognizer *)tap {
+    
+    
+    
 }
 
 
